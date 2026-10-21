@@ -1,0 +1,28 @@
+// Blood assets are chosen at runtime with A_ChangeModel (shape, growth stage and blood colour);
+// these entries only give each class a starting model.
+Model VGPool
+{
+	Path "models/blood"
+	Model 0 "pool_s.obj"
+	Skin 0 "pool_s0_0_red.png"
+	Scale 1.0 1.0 1.0
+	FrameIndex VGBL A 0 0
+}
+Model VGCeilSplat
+{
+	Path "models/blood"
+	Model 0 "ceil_0.obj"
+	Skin 0 "ceil_0_red.png"
+	Scale 1.0 1.0 1.0
+	FrameIndex VGBL A 0 0
+}
+Model VGChunk
+{
+	Path "models/blood"
+	Model 0 "chunk_0.obj"
+	Skin 0 "vgb_red.png"
+	Scale 1.0 1.0 1.0
+	USEACTORPITCH
+	USEACTORROLL
+	FrameIndex VGBL A 0 0
+}

@@ -1,0 +1,18 @@
+Model VoxelCacodemon
+{
+	Path "models/cacodemon"
+	Model 0 "cc_eye_0.iqm"
+	Model 1 "cc_shell_0.iqm"
+	Model 2 "cc_horn_l_0.iqm"
+	Model 3 "cc_horn_r_0.iqm"
+	Model 4 "cc_mouth_0.iqm"
+	Animation 0 "cc_anims.iqm"
+	Skin 0 "cc_pal.png"
+	Skin 1 "cc_pal.png"
+	Skin 2 "cc_pal.png"
+	Skin 3 "cc_pal.png"
+	Skin 4 "cc_pal.png"
+	Scale 1.0 1.0 1.0
+	AngleOffset 90
+	BaseFrame
+}

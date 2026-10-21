@@ -1,0 +1,530 @@
+{
+ "pool_s0_0": {
+  "voxels": 27,
+  "clot_voxels": 0
+ },
+ "pool_s0_1": {
+  "voxels": 69,
+  "clot_voxels": 0
+ },
+ "pool_s0_2": {
+  "voxels": 99,
+  "clot_voxels": 0
+ },
+ "pool_s0_3": {
+  "voxels": 131,
+  "clot_voxels": 0
+ },
+ "pool_s0_4": {
+  "voxels": 151,
+  "clot_voxels": 1
+ },
+ "pool_s0_5": {
+  "voxels": 180,
+  "clot_voxels": 1
+ },
+ "pool_s0_6": {
+  "voxels": 216,
+  "clot_voxels": 2
+ },
+ "pool_s0_7": {
+  "voxels": 233,
+  "clot_voxels": 2
+ },
+ "pool_s1_0": {
+  "voxels": 20,
+  "clot_voxels": 0
+ },
+ "pool_s1_1": {
+  "voxels": 65,
+  "clot_voxels": 0
+ },
+ "pool_s1_2": {
+  "voxels": 102,
+  "clot_voxels": 1
+ },
+ "pool_s1_3": {
+  "voxels": 128,
+  "clot_voxels": 1
+ },
+ "pool_s1_4": {
+  "voxels": 160,
+  "clot_voxels": 2
+ },
+ "pool_s1_5": {
+  "voxels": 183,
+  "clot_voxels": 2
+ },
+ "pool_s1_6": {
+  "voxels": 220,
+  "clot_voxels": 2
+ },
+ "pool_s1_7": {
+  "voxels": 242,
+  "clot_voxels": 3
+ },
+ "pool_s2_0": {
+  "voxels": 24,
+  "clot_voxels": 0
+ },
+ "pool_s2_1": {
+  "voxels": 82,
+  "clot_voxels": 1
+ },
+ "pool_s2_2": {
+  "voxels": 115,
+  "clot_voxels": 5
+ },
+ "pool_s2_3": {
+  "voxels": 138,
+  "clot_voxels": 7
+ },
+ "pool_s2_4": {
+  "voxels": 160,
+  "clot_voxels": 8
+ },
+ "pool_s2_5": {
+  "voxels": 180,
+  "clot_voxels": 10
+ },
+ "pool_s2_6": {
+  "voxels": 203,
+  "clot_voxels": 11
+ },
+ "pool_s2_7": {
+  "voxels": 223,
+  "clot_voxels": 11
+ },
+ "pool_s": {
+  "tris": 4,
+  "texture": "46x23",
+  "size_units": 25.04
+ },
+ "pool_m0_0": {
+  "voxels": 85,
+  "clot_voxels": 0
+ },
+ "pool_m0_1": {
+  "voxels": 489,
+  "clot_voxels": 21
+ },
+ "pool_m0_2": {
+  "voxels": 709,
+  "clot_voxels": 55
+ },
+ "pool_m0_3": {
+  "voxels": 888,
+  "clot_voxels": 65
+ },
+ "pool_m0_4": {
+  "voxels": 1085,
+  "clot_voxels": 71
+ },
+ "pool_m0_5": {
+  "voxels": 1296,
+  "clot_voxels": 77
+ },
+ "pool_m0_6": {
+  "voxels": 1525,
+  "clot_voxels": 78
+ },
+ "pool_m0_7": {
+  "voxels": 1767,
+  "clot_voxels": 79
+ },
+ "pool_m1_0": {
+  "voxels": 129,
+  "clot_voxels": 0
+ },
+ "pool_m1_1": {
+  "voxels": 442,
+  "clot_voxels": 32
+ },
+ "pool_m1_2": {
+  "voxels": 661,
+  "clot_voxels": 46
+ },
+ "pool_m1_3": {
+  "voxels": 906,
+  "clot_voxels": 52
+ },
+ "pool_m1_4": {
+  "voxels": 1120,
+  "clot_voxels": 56
+ },
+ "pool_m1_5": {
+  "voxels": 1301,
+  "clot_voxels": 60
+ },
+ "pool_m1_6": {
+  "voxels": 1497,
+  "clot_voxels": 60
+ },
+ "pool_m1_7": {
+  "voxels": 1711,
+  "clot_voxels": 61
+ },
+ "pool_m2_0": {
+  "voxels": 124,
+  "clot_voxels": 0
+ },
+ "pool_m2_1": {
+  "voxels": 449,
+  "clot_voxels": 9
+ },
+ "pool_m2_2": {
+  "voxels": 721,
+  "clot_voxels": 25
+ },
+ "pool_m2_3": {
+  "voxels": 941,
+  "clot_voxels": 40
+ },
+ "pool_m2_4": {
+  "voxels": 1097,
+  "clot_voxels": 42
+ },
+ "pool_m2_5": {
+  "voxels": 1224,
+  "clot_voxels": 47
+ },
+ "pool_m2_6": {
+  "voxels": 1351,
+  "clot_voxels": 51
+ },
+ "pool_m2_7": {
+  "voxels": 1521,
+  "clot_voxels": 53
+ },
+ "pool_m": {
+  "tris": 4,
+  "texture": "116x58",
+  "size_units": 63.16
+ },
+ "pool_l0_0": {
+  "voxels": 189,
+  "clot_voxels": 2
+ },
+ "pool_l0_1": {
+  "voxels": 1402,
+  "clot_voxels": 77
+ },
+ "pool_l0_2": {
+  "voxels": 1943,
+  "clot_voxels": 88
+ },
+ "pool_l0_3": {
+  "voxels": 2389,
+  "clot_voxels": 96
+ },
+ "pool_l0_4": {
+  "voxels": 2763,
+  "clot_voxels": 101
+ },
+ "pool_l0_5": {
+  "voxels": 3112,
+  "clot_voxels": 105
+ },
+ "pool_l0_6": {
+  "voxels": 3464,
+  "clot_voxels": 110
+ },
+ "pool_l0_7": {
+  "voxels": 3828,
+  "clot_voxels": 115
+ },
+ "pool_l1_0": {
+  "voxels": 277,
+  "clot_voxels": 26
+ },
+ "pool_l1_1": {
+  "voxels": 997,
+  "clot_voxels": 62
+ },
+ "pool_l1_2": {
+  "voxels": 1409,
+  "clot_voxels": 72
+ },
+ "pool_l1_3": {
+  "voxels": 1826,
+  "clot_voxels": 76
+ },
+ "pool_l1_4": {
+  "voxels": 2250,
+  "clot_voxels": 83
+ },
+ "pool_l1_5": {
+  "voxels": 2649,
+  "clot_voxels": 94
+ },
+ "pool_l1_6": {
+  "voxels": 3086,
+  "clot_voxels": 102
+ },
+ "pool_l1_7": {
+  "voxels": 3496,
+  "clot_voxels": 108
+ },
+ "pool_l2_0": {
+  "voxels": 330,
+  "clot_voxels": 13
+ },
+ "pool_l2_1": {
+  "voxels": 1124,
+  "clot_voxels": 75
+ },
+ "pool_l2_2": {
+  "voxels": 1612,
+  "clot_voxels": 90
+ },
+ "pool_l2_3": {
+  "voxels": 1950,
+  "clot_voxels": 101
+ },
+ "pool_l2_4": {
+  "voxels": 2269,
+  "clot_voxels": 106
+ },
+ "pool_l2_5": {
+  "voxels": 2585,
+  "clot_voxels": 115
+ },
+ "pool_l2_6": {
+  "voxels": 2982,
+  "clot_voxels": 127
+ },
+ "pool_l2_7": {
+  "voxels": 3302,
+  "clot_voxels": 137
+ },
+ "pool_l": {
+  "tris": 4,
+  "texture": "166x83",
+  "size_units": 90.38
+ },
+ "pool_h0_0": {
+  "voxels": 443,
+  "clot_voxels": 24
+ },
+ "pool_h0_1": {
+  "voxels": 2270,
+  "clot_voxels": 207
+ },
+ "pool_h0_2": {
+  "voxels": 3202,
+  "clot_voxels": 239
+ },
+ "pool_h0_3": {
+  "voxels": 4057,
+  "clot_voxels": 260
+ },
+ "pool_h0_4": {
+  "voxels": 5064,
+  "clot_voxels": 276
+ },
+ "pool_h0_5": {
+  "voxels": 6166,
+  "clot_voxels": 294
+ },
+ "pool_h0_6": {
+  "voxels": 7157,
+  "clot_voxels": 308
+ },
+ "pool_h0_7": {
+  "voxels": 7966,
+  "clot_voxels": 327
+ },
+ "pool_h1_0": {
+  "voxels": 483,
+  "clot_voxels": 29
+ },
+ "pool_h1_1": {
+  "voxels": 1994,
+  "clot_voxels": 200
+ },
+ "pool_h1_2": {
+  "voxels": 2974,
+  "clot_voxels": 261
+ },
+ "pool_h1_3": {
+  "voxels": 3862,
+  "clot_voxels": 272
+ },
+ "pool_h1_4": {
+  "voxels": 4659,
+  "clot_voxels": 279
+ },
+ "pool_h1_5": {
+  "voxels": 5422,
+  "clot_voxels": 298
+ },
+ "pool_h1_6": {
+  "voxels": 6199,
+  "clot_voxels": 315
+ },
+ "pool_h1_7": {
+  "voxels": 6935,
+  "clot_voxels": 333
+ },
+ "pool_h2_0": {
+  "voxels": 586,
+  "clot_voxels": 31
+ },
+ "pool_h2_1": {
+  "voxels": 1934,
+  "clot_voxels": 162
+ },
+ "pool_h2_2": {
+  "voxels": 2767,
+  "clot_voxels": 220
+ },
+ "pool_h2_3": {
+  "voxels": 3937,
+  "clot_voxels": 239
+ },
+ "pool_h2_4": {
+  "voxels": 4969,
+  "clot_voxels": 252
+ },
+ "pool_h2_5": {
+  "voxels": 5947,
+  "clot_voxels": 269
+ },
+ "pool_h2_6": {
+  "voxels": 6934,
+  "clot_voxels": 282
+ },
+ "pool_h2_7": {
+  "voxels": 7797,
+  "clot_voxels": 299
+ },
+ "pool_h": {
+  "tris": 4,
+  "texture": "232x116",
+  "size_units": 126.31
+ },
+ "ceil_0": {
+  "tris": 42,
+  "texture": "52x26",
+  "size_units": 28.31,
+  "drip_depth_units": 6.53
+ },
+ "ceil_1": {
+  "tris": 62,
+  "texture": "78x39",
+  "size_units": 42.47,
+  "drip_depth_units": 7.62
+ },
+ "ceil_2": {
+  "tris": 92,
+  "texture": "108x54",
+  "size_units": 58.8,
+  "drip_depth_units": 7.62
+ },
+ "ceil_3": {
+  "tris": 52,
+  "texture": "68x34",
+  "size_units": 37.02,
+  "drip_depth_units": 5.44
+ },
+ "chunk_0": {
+  "tris": 252,
+  "voxels": 123,
+  "size_units": [
+   9.8,
+   5.4,
+   5.4
+  ],
+  "half_height": 2.72
+ },
+ "chunk_1": {
+  "tris": 134,
+  "voxels": 38,
+  "size_units": [
+   5.4,
+   4.4,
+   3.3
+  ],
+  "half_height": 1.63
+ },
+ "chunk_2": {
+  "tris": 368,
+  "voxels": 165,
+  "size_units": [
+   9.8,
+   7.6,
+   6.5
+  ],
+  "half_height": 3.27
+ },
+ "chunk_3": {
+  "tris": 188,
+  "voxels": 87,
+  "size_units": [
+   13.1,
+   4.4,
+   4.4
+  ],
+  "half_height": 2.18
+ },
+ "chunk_4": {
+  "tris": 56,
+  "voxels": 61,
+  "size_units": [
+   14.2,
+   3.3,
+   3.3
+  ],
+  "half_height": 1.63
+ },
+ "chunk_5": {
+  "tris": 306,
+  "voxels": 123,
+  "size_units": [
+   14.2,
+   8.7,
+   5.4
+  ],
+  "half_height": 2.72
+ },
+ "chunk_6": {
+  "tris": 360,
+  "voxels": 122,
+  "size_units": [
+   14.2,
+   9.8,
+   5.4
+  ],
+  "half_height": 2.72
+ },
+ "chunk_7": {
+  "tris": 180,
+  "voxels": 41,
+  "size_units": [
+   12.0,
+   6.5,
+   1.1
+  ],
+  "half_height": 0.54
+ },
+ "chunk_8": {
+  "tris": 196,
+  "voxels": 59,
+  "size_units": [
+   10.9,
+   7.6,
+   3.3
+  ],
+  "half_height": 1.63
+ },
+ "chunk_9": {
+  "tris": 226,
+  "voxels": 78,
+  "size_units": [
+   7.6,
+   7.6,
+   3.3
+  ],
+  "half_height": 1.63
+ }
+}

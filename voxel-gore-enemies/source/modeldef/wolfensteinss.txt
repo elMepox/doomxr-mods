@@ -1,0 +1,18 @@
+Model VoxelWolfensteinSS
+{
+	Path "models/wolfss"
+	Model 0 "ss_head_0.iqm"
+	Model 1 "ss_torso_0.iqm"
+	Model 2 "ss_arm_l_0.iqm"
+	Model 3 "ss_arm_r_0.iqm"
+	Model 4 "ss_legs_0.iqm"
+	Animation 0 "ss_anims.iqm"
+	Skin 0 "ss_pal.png"
+	Skin 1 "ss_pal.png"
+	Skin 2 "ss_pal.png"
+	Skin 3 "ss_pal.png"
+	Skin 4 "ss_pal.png"
+	Scale 1.0 1.0 1.0
+	AngleOffset 90
+	BaseFrame
+}
