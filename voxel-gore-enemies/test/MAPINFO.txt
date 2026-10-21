@@ -1,0 +1,2 @@
+map VGNH "Voxel Gore: non-humanoids" { sky1 = "SKY1" music = "" }
+gameinfo { AddEventHandlers = "VGNHHandler" }

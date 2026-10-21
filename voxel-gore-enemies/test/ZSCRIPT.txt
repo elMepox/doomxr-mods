@@ -1,0 +1,107 @@
+version "4.12"
+// Test scene for all Voxel Gore enemies (+map VGNH). Add a class to Classes and it gets the whole run:
+// close-up idle, bite/attack, zone wounds, a death per zone, blast death, gib. Then all of them fight.
+class VGNHPoint : Actor { Default { +NOINTERACTION; Height 2; Radius 1; } States { Spawn: TNT1 A 2; Stop; } }
+class VGNHBoom : Actor
+{
+	Default { +NOINTERACTION; Height 2; Radius 1; RenderStyle "Add"; Scale 1.6; }
+	States { Spawn: MISL B 0 BRIGHT NoDelay A_StartSound("weapons/rocklx", CHAN_AUTO, attenuation: ATTN_NONE); MISL B 8 BRIGHT; MISL C 6 BRIGHT; MISL D 4 BRIGHT; Stop; }
+}
+
+class VGNHHandler : EventHandler
+{
+	static const string Classes[] = { "ZombieMan", "ShotgunGuy", "ChaingunGuy", "WolfensteinSS", "DoomImp", "HellKnight", "BaronOfHell", "Revenant", "Archvile", "Demon", "Spectre", "LostSoul", "Cacodemon", "PainElemental", "Fatso", "Arachnotron", "Cyberdemon" };
+	const SEG = 420;     // tics per class
+	Array<Actor> mons;
+
+	void Clear()
+	{
+		for (int i = 0; i < mons.Size(); i++) if (mons[i]) mons[i].Destroy();
+		mons.Clear();
+	}
+	Actor Put(string cls, double dist, double side, double turn)
+	{
+		let p = players[0].mo;
+		Vector2 at = p.Pos.xy + Actor.AngleToVector(p.Angle) * dist + Actor.AngleToVector(p.Angle - 90) * side;
+		let m = Actor.Spawn(cls, (at, 0), ALLOW_REPLACE);
+		m.Angle = p.Angle + 180 + turn; m.Speed = 0; m.health = 5000; m.bFriendly = true;
+		mons.Push(m);
+		return m;
+	}
+	void Hit(Actor z, double relZ, double side, int dmg, Name mod = 'None', int flags = 0)
+	{
+		if (!z || z.health <= 0) return;
+		let p = players[0].mo;
+		Vector3 at = z.Pos + (0, 0, z.Height * relZ);
+		at.xy += Actor.AngleToVector(z.Angle + 90) * side + Actor.AngleToVector(z.Angle) * 10;
+		let t = Actor.Spawn("VGNHPoint", at);
+		t.target = p;
+		z.DamageMobj(t, p, dmg, mod, flags);
+	}
+
+	int Brk(Actor z) { return max(8, int(z.GetSpawnHealth() * 0.15)) + 1; }
+
+	override void WorldTick()
+	{
+		int t = level.time;
+		let p = players[0].mo;
+		if (t == 1) { players[0].cheats |= CF_NOTARGET | CF_GODMODE | CF_NOCLIP; p.A_SetPitch(-2); }
+		int n = Classes.Size();
+		if (t < 5 || t >= 5 + n * SEG)
+		{
+			if (t == 5 + n * SEG)
+			{
+				Clear();
+				players[0].cheats &= ~CF_NOTARGET;
+				for (int i = 0; i < 6; i++)
+				{
+					let m = Put(Classes[i % n], 520, (i - 2.5) * 110, 0);
+					m.bFriendly = false; m.Speed = m.Default.Speed; m.health = m.GetSpawnHealth(); m.target = p; m.SetStateLabel("See");
+				}
+			}
+			return;
+		}
+		int k = (t - 5) / SEG, f = (t - 5) % SEG;
+		string c = Classes[k];
+		if (f == 0) { Console.Printf("VGNH %s: idle, attack, wounds", c); Clear(); Put(c, 120, 0, -30); }
+		Actor m = mons.Size() ? mons[0] : null;
+		if (f == 40 && m) { m.target = p; if (m.FindState("Melee")) m.SetStateLabel("Melee"); else m.SetStateLabel("Missile"); }
+		if (f == 90 && m) { m.SetStateLabel("Spawn"); Hit(m, 0.75, 0, Brk(m)); Hit(m, 0.55, 0, Brk(m)); Hit(m, 0.55, -14, Brk(m)); Hit(m, 0.3, 0, Brk(m)); }
+		// a death per zone, side by side: head, legs, torso from the front, torso from behind
+		if (f == 150)
+		{
+			Console.Printf("VGNH %s: deaths head / legs / torso / back", c);
+			Clear();
+			for (int i = 0; i < 4; i++) Put(c, 230, (i - 1.5) * 75, -20);
+		}
+		if (f == 170)
+		{
+			static const double rz[] = { 0.75, 0.3, 0.55, 0.55 };
+			for (int i = 0; i < 4; i++)
+			{
+				let z = mons[i];
+				if (!z) continue;
+				z.health = 5;
+				if (i < 3) Hit(z, rz[i], 0, 10);
+				else
+				{
+					let pt = Actor.Spawn("VGNHPoint", z.Pos + (0, 0, z.Height * 0.55) - Actor.AngleToVector(z.Angle) * 10);
+					pt.target = p; z.DamageMobj(pt, p, 10, 'None');
+				}
+			}
+		}
+
+		// explosion without overkill (death_blast), then a fresh one with overkill (XDeath)
+		if (f == 270 || f == 340) { Clear(); Put(c, 160, 0, -25); }
+		if ((f == 285 || f == 355) && m)
+		{
+			Vector2 dir = Actor.AngleToVector(m.AngleTo(p) - 75);
+			Vector3 at = (m.Pos.xy + dir * (m.Radius + 14), m.Pos.z + m.Height * 0.35);
+			Actor.Spawn("VGNHBoom", at);
+			let pt = Actor.Spawn("VGNHPoint", at); pt.target = p;
+			m.health = 40;
+			int gibAt = -m.GetGibHealth();
+			m.DamageMobj(pt, p, f == 355 ? 40 + gibAt + 150 : 40 + gibAt / 2, 'None', DMG_EXPLOSION);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+Model VoxelBaronOfHell
+{
+	Path "models/baron"
+	Model 0 "bh_head_0.iqm"
+	Model 1 "bh_torso_0.iqm"
+	Model 2 "bh_arm_l_0.iqm"
+	Model 3 "bh_arm_r_0.iqm"
+	Model 4 "bh_legs_0.iqm"
+	Animation 0 "bh_anims.iqm"
+	Skin 0 "bh_pal.png"
+	Skin 1 "bh_pal.png"
+	Skin 2 "bh_pal.png"
+	Skin 3 "bh_pal.png"
+	Skin 4 "bh_pal.png"
+	Scale 1.0 1.0 1.0
+	AngleOffset 90
+	BaseFrame
+}

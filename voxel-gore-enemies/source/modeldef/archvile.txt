@@ -1,0 +1,18 @@
+Model VoxelArchvile
+{
+	Path "models/archvile"
+	Model 0 "av_head_0.iqm"
+	Model 1 "av_torso_0.iqm"
+	Model 2 "av_arm_l_0.iqm"
+	Model 3 "av_arm_r_0.iqm"
+	Model 4 "av_legs_0.iqm"
+	Animation 0 "av_anims.iqm"
+	Skin 0 "av_pal.png"
+	Skin 1 "av_pal.png"
+	Skin 2 "av_pal.png"
+	Skin 3 "av_pal.png"
+	Skin 4 "av_pal.png"
+	Scale 1.0 1.0 1.0
+	AngleOffset 90
+	BaseFrame
+}

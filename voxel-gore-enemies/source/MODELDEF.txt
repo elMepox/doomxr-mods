@@ -1,0 +1,20 @@
+// Voxel Gore: every enemy = up to 5 zone models on one skeleton, one file per enemy in modeldef/.
+// Animations come from <p>_anims.iqm; with DECOUPLEDANIMATIONS the bones are shared by all zone models,
+// so A_ChangeModel swaps a zone to its wounded version (<zone>_1) while the animation keeps playing.
+
+#include "modeldef/archvile.txt"
+#include "modeldef/baronofhell.txt"
+#include "modeldef/chaingunguy.txt"
+#include "modeldef/hellknight.txt"
+#include "modeldef/imp.txt"
+#include "modeldef/revenant.txt"
+#include "modeldef/shotgunguy.txt"
+#include "modeldef/wolfensteinss.txt"
+#include "modeldef/zombieman.txt"
+#include "modeldef/demon.txt"
+#include "modeldef/lostsoul.txt"
+#include "modeldef/cacodemon.txt"
+#include "modeldef/painelemental.txt"
+#include "modeldef/fatso.txt"
+#include "modeldef/arachnotron.txt"
+#include "modeldef/cyberdemon.txt"

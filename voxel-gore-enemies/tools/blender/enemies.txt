@@ -1,0 +1,17 @@
+# enemy  prefix  kind      source .blend (relative to voxel-gore-doom/)
+zombieman   ZM  rifle     zombieman/zombieman.blend
+shotgunguy  SG  shotgun   mod/blend/shotgunguy_rebuilt_fix3.blend
+chaingunner CG  chaingun  chaingunner/chaingunner.blend
+wolfss      SS  rifle     mod/blend/wolfss_rebuilt_fix3.blend
+imp         IMP imp       imp/imp.blend
+hellknight  HK  knight    hellknight/hellknight.blend
+baron       BH  knight    mod/blend/baron_rebuilt_fix3.blend
+revenant    RV  revenant  mod/blend/revenant_rebuilt_fix3.blend
+archvile    AV  archvile  archvile/archvile.blend
+pinky       DM  beast     pinky/pinky.blend
+lostsoul    LS  authored  lostsoul/lostsoul.blend
+cacodemon   CC  orb       cacodemon/cacodemon.blend
+painelemental PE  pain      painelemental/painelemental.blend
+mancubus    MC  mancubus  mancubus/mancubus.blend
+arachnotron AR  spider    arachnotron/arachnotron.blend
+cyberdemon  CY  prebuilt  cyberdemon/cyberdemon.blend   # exported by hand in Blender (no vg_build): copy cyberdemon/export/models/cyberdemon

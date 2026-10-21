@@ -1,0 +1,6 @@
+// Voxel Gore blood add-on. Limits: 0 = no limit (blood stays forever).
+server int vg_blood = 3;          // amount of blood: 0 off, 1 low, 2 normal, 3 a lot, 4 extreme
+server int vg_pools_max = 0;      // floor pools kept at once, oldest removed first
+server int vg_gibs_max = 0;       // meat chunks kept at once
+server int vg_splats_max = 0;     // ceiling splats kept at once
+user bool vg_screenblood = true;  // blood drops on the screen next to a gib or a blast

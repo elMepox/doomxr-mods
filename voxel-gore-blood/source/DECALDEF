@@ -1,0 +1,55 @@
+// Pixel blood splats; textures are upscaled x4 so filtering keeps them blocky.
+decal VGSplatR0 { pic VGSR0 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR0 { pic VGSR0 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR1 { pic VGSR1 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR1 { pic VGSR1 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR2 { pic VGSR2 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR2 { pic VGSR2 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR3 { pic VGSR3 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR3 { pic VGSR3 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR4 { pic VGSR4 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR4 { pic VGSR4 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR5 { pic VGSR5 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR5 { pic VGSR5 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR6 { pic VGSR6 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR6 { pic VGSR6 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatR7 { pic VGSR7 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatR7 { pic VGSR7 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decalgroup VGSplatR { VGSplatR0 1 VGSplatR1 1 VGSplatR2 1 VGSplatR3 1 VGSplatR4 1 VGSplatR5 1 VGSplatR6 1 VGSplatR7 1 }
+decalgroup VGBigSplatR { VGBigSplatR0 1 VGBigSplatR1 1 VGBigSplatR2 1 VGBigSplatR3 1 VGBigSplatR4 1 VGBigSplatR5 1 VGBigSplatR6 1 VGBigSplatR7 1 }
+decal VGSplatG0 { pic VGSG0 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG0 { pic VGSG0 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG1 { pic VGSG1 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG1 { pic VGSG1 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG2 { pic VGSG2 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG2 { pic VGSG2 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG3 { pic VGSG3 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG3 { pic VGSG3 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG4 { pic VGSG4 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG4 { pic VGSG4 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG5 { pic VGSG5 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG5 { pic VGSG5 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG6 { pic VGSG6 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG6 { pic VGSG6 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatG7 { pic VGSG7 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatG7 { pic VGSG7 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decalgroup VGSplatG { VGSplatG0 1 VGSplatG1 1 VGSplatG2 1 VGSplatG3 1 VGSplatG4 1 VGSplatG5 1 VGSplatG6 1 VGSplatG7 1 }
+decalgroup VGBigSplatG { VGBigSplatG0 1 VGBigSplatG1 1 VGBigSplatG2 1 VGBigSplatG3 1 VGBigSplatG4 1 VGBigSplatG5 1 VGBigSplatG6 1 VGBigSplatG7 1 }
+decal VGSplatB0 { pic VGSB0 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB0 { pic VGSB0 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB1 { pic VGSB1 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB1 { pic VGSB1 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB2 { pic VGSB2 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB2 { pic VGSB2 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB3 { pic VGSB3 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB3 { pic VGSB3 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB4 { pic VGSB4 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB4 { pic VGSB4 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB5 { pic VGSB5 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB5 { pic VGSB5 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB6 { pic VGSB6 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB6 { pic VGSB6 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decal VGSplatB7 { pic VGSB7 x-scale 0.27 y-scale 0.27 randomflipx randomflipy }
+decal VGBigSplatB7 { pic VGSB7 x-scale 0.55 y-scale 0.55 randomflipx randomflipy }
+decalgroup VGSplatB { VGSplatB0 1 VGSplatB1 1 VGSplatB2 1 VGSplatB3 1 VGSplatB4 1 VGSplatB5 1 VGSplatB6 1 VGSplatB7 1 }
+decalgroup VGBigSplatB { VGBigSplatB0 1 VGBigSplatB1 1 VGBigSplatB2 1 VGBigSplatB3 1 VGBigSplatB4 1 VGBigSplatB5 1 VGBigSplatB6 1 VGBigSplatB7 1 }
